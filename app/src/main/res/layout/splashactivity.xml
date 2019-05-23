@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.AUStoreHouse.splashActivity"
+    android:background="#0084d6">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="335dp"
+        android:layout_height="343dp"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="338dp"
+            android:layout_height="342dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ere"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.724"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shimmer_base_color="@color/colorAccent"
+            app:shimmer_direction="top_to_bottom"
+            app:shimmer_dropoff="4"
+            app:shimmer_shape="radial">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font_main"
+                android:gravity="center"
+                android:text="AU StoreHouse"
+                android:textColor="#FFA000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="47dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        app:mk_color="#ffffff"
+        app:mk_type="TwinFishesSpinner" />
+
+
+</RelativeLayout>

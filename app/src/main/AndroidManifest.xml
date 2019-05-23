@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AUStoreHouse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ere"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ere"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.AUStoreHouse.MainActivity"></activity>
+
+        <service android:name="com.AUStoreHouse.MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5040215542785098~4205978715" />
+
+        <activity
+            android:name="com.AUStoreHouse.SemAct"
+            android:label="Semester"
+            android:parentActivityName="com.AUStoreHouse.MainActivity" />
+        <activity
+            android:name="com.AUStoreHouse.DeptAct"
+            android:label="Department"
+            android:parentActivityName="com.AUStoreHouse.MainActivity" />
+        <activity
+            android:name="com.AUStoreHouse.DataFetchActivity"
+            android:label="DATA FETCH"
+            android:parentActivityName="com.AUStoreHouse.MainActivity" />
+        <activity android:name="com.AUStoreHouse.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.AUStoreHouse.InfoAct"></activity>
+    </application>
+
+</manifest>

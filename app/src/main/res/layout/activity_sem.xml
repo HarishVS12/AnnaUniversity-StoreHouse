@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shimmer_direction="bottom_to_top"
+            app:shimmer_dropoff="4"
+            app:shimmer_highlight_color="#FBC02D"
+            app:shimmer_shape="radial">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/supers"
+                android:text="SEMESTER"
+                android:textColor="#FBC02D"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5040215542785098/3588262548"></com.google.android.gms.ads.AdView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/sem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:foreground="@drawable/ripple"
+            android:onClick="cd"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/gradient"
+                    android:scaleType="centerCrop"
+                    android:scrollY="-10dp"
+                    android:src="@drawable/sem1" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/kaushan"
+                    android:maxLines="1"
+                    android:text="SEMESTER 1"
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="6dp"
+            android:foreground="@drawable/ripple"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:scrollY="-47dp"
+                    android:src="@drawable/sem2" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/kaushan"
+                    android:maxLines="1"
+                    android:text="SEMESTER 2"
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="6dp"
+            android:foreground="@drawable/ripple"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:scrollY="-30dp"
+                    android:src="@drawable/sem3"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/kaushan"
+                    android:maxLines="1"
+                    android:text="SEMESTER 3"
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/sem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="6dp"
+            android:foreground="@drawable/ripple"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:scrollY="-55dp"
+                    android:src="@drawable/sem4"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/kaushan"
+                    android:maxLines="1"
+                    android:text="SEMESTER 4"
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

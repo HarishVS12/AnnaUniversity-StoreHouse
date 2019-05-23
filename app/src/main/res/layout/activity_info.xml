@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.AUStoreHouse.InfoAct"
+    android:background="#0084d6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:src="@drawable/ere" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/conti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shimmer_direction="bottom_to_top"
+            app:shimmer_dropoff="4"
+            app:shimmer_highlight_color="#FBC02D"
+            app:shimmer_shape="radial">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/supers"
+                android:text="Developed by Harish.V"
+                android:textColor="#FFC107"
+                android:textSize="30sp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:fontFamily="@font/supers"
+            android:text="Version : 0.1"
+            android:textColor="#FFC107"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:text="DISCLAIMER :\nThis is an unOfficial app and not linked to AU by any means."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:text="ThirdParty Libraries :\nGoogle FireBase SDK, Shimmer By FaceBook, MK Loader by Tuyen Monkey, Google AdMob."
+            android:textColor="#D32F2F"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:text="Syllabus and QP Source :\nAnna University"
+            android:textColor="#212121"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/gmail"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/gmail"
+            android:onClick="gmail"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/insta"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/instagram"
+                android:onClick="insta"/>
+
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shimmer_direction="bottom_to_top"
+            app:shimmer_dropoff="4"
+            app:shimmer_highlight_color="#FBC02D"
+            app:shimmer_shape="radial">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/supers"
+            android:text="PRIVACY POLICY"
+            android:textColor="#FFC107"
+            android:textSize="30sp" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
